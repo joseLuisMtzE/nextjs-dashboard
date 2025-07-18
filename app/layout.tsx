@@ -7,7 +7,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.className} antialiased`}> 
-      <body>{children}</body>
+      <body>
+        {children}
+        <footer className='text-center text-sm p-4 '>Hecho con ❤️ por @joseLuisMtzE</footer>
+        </body>
     </html>
   );
 }
