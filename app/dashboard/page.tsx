@@ -1,6 +1,9 @@
 import React from 'react'
+import { fetchRevenue } from '../lib/data'
 
-export default function Page() {
+export default async function DashboardPage() {
+  const revenue = await fetchRevenue()
+  console.log(revenue)
   return (
     <p>Dashboard Page</p>
   )
